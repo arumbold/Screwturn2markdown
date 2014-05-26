@@ -101,7 +101,7 @@ namespace ScrewTurn2Markdown {
                               .Replace("–", "-")
                               .Replace("»", "&raquo;")
                               .Replace("«", "&laquo;");
-                          dest.Combine(path.ChangeExtension(".markdown").FileName)
+                          dest.Combine(path.ChangeExtension(".md").FileName)
                               .Write(content);
                       });
         }
